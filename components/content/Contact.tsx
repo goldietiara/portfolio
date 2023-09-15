@@ -2,64 +2,88 @@
 
 import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
-import { FcGoogle } from "react-icons/fc";
+import { BiLogoGmail } from "react-icons/bi";
+import { SiGmail } from "react-icons/si";
+import { TfiLinkedin } from "react-icons/tfi";
+import { TbBrandGithubFilled } from "react-icons/tb";
 
 type Props = {};
 
 export default function Contact({}: Props) {
   return (
     <section>
-      <h1 className="text-7xl underline underline-offset-8">Contact</h1>
+      <h1 className="text-7xl underline underline-offset-8">
+        Contact & Social
+      </h1>
 
       <div
-        className="mt-14 w-full flex gap-5
+        className="mt-14 mb-36 w-full flex gap-5
       flex-col
       md:flex-row
       "
       >
-        {/* White */}
-        <span
-          className="flex items-start
-        mx-5 py-5
-        md:mx-0"
+        <motion.a
+          initial={{ x: -50 }}
+          whileInView={{ x: 0 }}
+          transition={{
+            duration: 1.5,
+            // ease: [0.43, 0.13, 0.23, 0.96],
+            // delay: 0.5,
+          }}
+          href={`mailto:goldietiara.acc@gmail.com`}
+          // target="_blank"
+          className="flex shrink-0 bg-black text-white rounded-sm transition-all duration-200 ease-in-out
+          p-2
+          hover:bg-white/50"
         >
-          <a
-            href="https://www.linkedin.com/in/ryan-fadhilah-03146918a/"
-            target="_blank"
-            className="flex items-center gap-5"
-          >
-            <BsLinkedin className="text-3xl"></BsLinkedin>
-            <span className="md:hidden text-2xl ">Fast Response</span>
-          </a>
-        </span>
+          <SiGmail
+            className="shrink-0
+          text-xs
+          md:text-xl"
+          />
+        </motion.a>
 
-        {/* Black */}
-        <motion.span
+        <motion.a
+          initial={{ x: -100 }}
+          whileInView={{ x: 0 }}
+          transition={{
+            duration: 1.5,
+            // ease: [0.43, 0.13, 0.23, 0.96],
+            // delay: 0.5,
+          }}
+          href={`https://www.linkedin.com/in/goldie-tiara-putri-900733196`}
+          target="_blank"
+          className="flex shrink-0 bg-black text-white rounded-sm transition-all duration-200 ease-in-out
+          p-2
+          hover:bg-white/50"
+        >
+          <TfiLinkedin
+            className="shrink-0
+          text-xs
+          md:text-xl"
+          />
+        </motion.a>
+
+        <motion.a
           initial={{ x: -150 }}
           whileInView={{ x: 0 }}
           transition={{
             duration: 1.5,
-            ease: [0.43, 0.13, 0.23, 0.96],
-            delay: 0.5,
+            // ease: [0.43, 0.13, 0.23, 0.96],
+            // delay: 0.5,
           }}
-          className="w-5/6 text-white bg-black 
-          h-80 p-5
-          md:h-96"
+          href={`https://github.com/goldietiara`}
+          target="_blank"
+          className="flex shrink-0 bg-black text-white rounded-sm transition-all duration-200 ease-in-out
+            p-2
+            hover:bg-white/50"
         >
-          <span className="flex items-center gap-2 ">
-            <motion.a
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 2 }}
-              href="https://www.linkedin.com/in/ryan-fadhilah-03146918a/"
-              target="_blank"
-              className="text-xl "
-            >
-              ryan.fadhilah.acc@gmail.com
-            </motion.a>
-            {/* <FcGoogle className="text-xl"></FcGoogle> */}
-          </span>
-        </motion.span>
+          <TbBrandGithubFilled
+            className="shrink-0
+          text-xs
+          md:text-xl"
+          />
+        </motion.a>
       </div>
     </section>
   );
