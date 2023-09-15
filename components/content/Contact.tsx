@@ -22,6 +22,7 @@ export default function Contact({}: Props) {
       md:flex-row
       "
       >
+        {/* mail */}
         <motion.a
           initial={{ x: -50 }}
           whileInView={{ x: 0 }}
@@ -43,6 +44,7 @@ export default function Contact({}: Props) {
           />
         </motion.a>
 
+        {/* linkedin */}
         <motion.a
           initial={{ x: -100 }}
           whileInView={{ x: 0 }}
@@ -64,6 +66,7 @@ export default function Contact({}: Props) {
           />
         </motion.a>
 
+        {/* github */}
         <motion.a
           initial={{ x: -150 }}
           whileInView={{ x: 0 }}
