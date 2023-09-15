@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BsLinkedin } from "react-icons/bs";
-import { BiLogoGmail } from "react-icons/bi";
 import { SiGmail } from "react-icons/si";
 import { TfiLinkedin } from "react-icons/tfi";
 import { TbBrandGithubFilled } from "react-icons/tb";

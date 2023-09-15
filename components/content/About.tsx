@@ -33,8 +33,7 @@ export default function About({}: Props) {
       md:mx-0 md:w-5/6"
       >
         Graduate at December 2022 of Information System majoring in Business
-        Information Technology at Bina Nusantara University with a Professional
-        Certificate of Front-End developer at Meta.
+        Information Technology at Bina Nusantara University.
       </motion.section>
 
       {/* Focus */}
