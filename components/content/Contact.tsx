@@ -28,13 +28,13 @@ export default function Contact({}: Props) {
           transition={{
             duration: 1.5,
             // ease: [0.43, 0.13, 0.23, 0.96],
-            // delay: 0.5,
+            // delay: 0.5,j
           }}
           href={`mailto:goldietiara.acc@gmail.com`}
           // target="_blank"
           className="flex shrink-0 bg-black text-white rounded-sm transition-all duration-200 ease-in-out
           p-2
-          hover:bg-white/50"
+          hover:bg-black/70"
         >
           <SiGmail
             className="shrink-0
@@ -55,7 +55,7 @@ export default function Contact({}: Props) {
           target="_blank"
           className="flex shrink-0 bg-black text-white rounded-sm transition-all duration-200 ease-in-out
           p-2
-          hover:bg-white/50"
+          hover:bg-black/70"
         >
           <TfiLinkedin
             className="shrink-0
@@ -76,7 +76,7 @@ export default function Contact({}: Props) {
           target="_blank"
           className="flex shrink-0 bg-black text-white rounded-sm transition-all duration-200 ease-in-out
             p-2
-            hover:bg-white/50"
+            hover:bg-black/70"
         >
           <TbBrandGithubFilled
             className="shrink-0
