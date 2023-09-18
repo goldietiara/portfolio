@@ -55,7 +55,7 @@ export default function Portfolio({}: Props) {
                   alt="foto"
                   width={500}
                   height={500}
-                  className="w-full"
+                  className="w-full bg-transparent"
                 ></Image>
               </a>
               <span

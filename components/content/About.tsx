@@ -60,17 +60,15 @@ export default function About({}: Props) {
           initial={{ x: -50, opacity: 0.5 }}
           transition={{ duration: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className="flex items-start text-5xl gap-3 relative"
+          className="flex items-start text-5xl gap-3 relative "
         >
-          <span>General Knowledge</span>
+          <span className="z-10">General Knowledge</span>
           <motion.span
             initial={{ x: -50, opacity: 0.5 }}
             transition={{ duration: 1 }}
             whileInView={{ x: 0, opacity: 1 }}
-            className="w-[100px] h-[30px] bg-teal-700/50 backdrop-blur-[.5px] absolute "
+            className="w-[150px] h-[20px] bg-yellow-500/50 backdrop-blur-[.5px] absolute bottom-0 -left-2 z-0"
           ></motion.span>
-
-          {/* <AiFillLinkedin className="text-yellow-500 text-2xl"></AiFillLinkedin> */}
         </motion.h1>
 
         <ul className="flex flex-col gap-5 pt-10 text-xl ">
@@ -109,15 +107,13 @@ export default function About({}: Props) {
           whileInView={{ x: 0, opacity: 1 }}
           className="flex items-start text-5xl gap-3 relative"
         >
-          <span>Professional Certificate</span>
+          <span className="z-10">Professional Certificate</span>
           <motion.span
             initial={{ x: -50, opacity: 0.5 }}
             transition={{ duration: 1 }}
             whileInView={{ x: 0, opacity: 1 }}
-            className="w-[100px] h-[30px] bg-teal-700/50 backdrop-blur-[.5px] absolute "
+            className="w-[150px] h-[20px] bg-yellow-500/50 backdrop-blur-[.5px] absolute bottom-0 -left-2 z-0"
           ></motion.span>
-
-          {/* <AiFillLinkedin className="text-yellow-500 text-2xl"></AiFillLinkedin> */}
         </motion.h1>
 
         <div className="flex flex-col gap-5 pt-10 text-xl ">
@@ -157,14 +153,15 @@ export default function About({}: Props) {
           whileInView={{ x: 0, opacity: 1 }}
           className="flex items-start text-5xl gap-3 relative"
         >
-          <span>Work Experience</span>
+          <span className="z-10">Work Experience</span>
           <motion.span
             initial={{ x: -50, opacity: 0.5 }}
             transition={{ duration: 1 }}
             whileInView={{ x: 0, opacity: 1 }}
-            className="w-[100px] h-[30px] bg-teal-700/50 backdrop-blur-[.5px] absolute "
+            className="w-[150px] h-[20px] bg-yellow-500/50 backdrop-blur-[.5px] absolute bottom-0 -left-2 z-0"
           ></motion.span>
         </motion.h1>
+
         <ul className="flex flex-col gap-5 pt-10 text-xl">
           {workExperience.map((v, i, a) => {
             return (
@@ -200,14 +197,15 @@ export default function About({}: Props) {
           whileInView={{ x: 0, opacity: 1 }}
           className="flex items-start text-5xl gap-3 relative"
         >
-          <span>Organization Experience</span>
+          <span className="z-10">Organization Experience</span>
           <motion.span
             initial={{ x: -50, opacity: 0.5 }}
             transition={{ duration: 1 }}
             whileInView={{ x: 0, opacity: 1 }}
-            className="w-[100px] h-[30px] bg-teal-700/50 backdrop-blur-[.5px] absolute "
+            className="w-[150px] h-[20px] bg-yellow-500/50 backdrop-blur-[.5px] absolute bottom-0 -left-2 z-0"
           ></motion.span>
         </motion.h1>
+
         <ul className="flex flex-col gap-5 pt-10 text-xl">
           {organizationExperience.map((v, i, a) => {
             return (

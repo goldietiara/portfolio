@@ -88,7 +88,7 @@ export default function Intro({}: Props) {
         sm:hidden"
         >
           <Image
-            src={"/goldie.PNG"}
+            src={"/goldie.jpg"}
             alt="photo"
             width={140}
             height={140}
@@ -124,7 +124,7 @@ export default function Intro({}: Props) {
       md:gap-10 md:px-10 md:py-20 md:mt-0 md:flex md:flex-col md:items-center md:justify-center"
       >
         <Image
-          src={"/goldie.PNG"}
+          src={"/goldie.jpg"}
           alt="photo"
           width={400}
           height={400}
